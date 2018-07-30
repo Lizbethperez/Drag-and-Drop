@@ -9,12 +9,19 @@ dragover
 drop
 dragend
 
-//EJERCICIO DRAP AND DROP
-
 Drag and Drop Interface dataTranfer
 */
+//EJERCICIO DRAP AND DROP
+
 var containerPrincipal = document.getElementById("container1");
 var containerPrincipal2 = document.getElementById("container2");
+
+  $("#file").on("change", function(event){
+    var selectedFile = event.target.files[0].name;
+    console.log(selectedFile);
+    var imageSave=document.getElementById("imageBuho4");
+    imageSave.src="assets/img/"+selectedFile;
+  });
 
 $(".dragImages").mousedown(function() {
     var idImages = $(this).attr("id");
@@ -51,3 +58,4 @@ containerPrincipal2.ondrop=function(event){// Este Evento se disparara cuando la
     newElementInContainer.src=myElement.src;
     containerPrincipal2.appendChild(newElementInContainer);
 }
+

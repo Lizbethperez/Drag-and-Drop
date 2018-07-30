@@ -11,15 +11,18 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid"><br>
+        <div class="row"> 
+            <input id="file" class=" col-lg-6" type="file" name="imagensubida" accept="image/png, .jpeg, .jpg, image/gif">
+            <h2>DRAG AND DROP</h2>
+        </div>
         <div class="row no-gutters">
-            <div class=" col-lg-2 offset-1">
+            <div class=" col-lg-2 offset-1"><br>
                 <ul id="images">
                     <li><img id="imageBuho1" class="dragImages" src="assets/img/buho1.jpg" alt="buho1"> </li>
                     <li><img id="imageBuho2" class="dragImages" src="assets/img/buho2.jpg" alt="buho2"></li>
                     <li><img id="imageBuho3" class="dragImages" src="assets/img/buho3.jpg" alt="buho3"></li>
-                    <li><img id="imageBuho4" class="dragImages" src="assets/img/buho4.jpg" alt="buho4"></li>
-                    <li><img id="imageBuho5" class="dragImages" src="assets/img/buho6.jpg" alt="buho6"></li>
+                    <li id="container-img-save"><img id="imageBuho4" src="assets/img/text.jpg" class="dragImages"></li>
                 </ul>
             </div>
             <div id="container1" class="col-lg-4"></div>
