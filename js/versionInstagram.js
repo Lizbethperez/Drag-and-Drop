@@ -44,18 +44,4 @@ containerPrincipal.ondrop=function(event){// Este Evento se disparara cuando la 
     containerPrincipal.appendChild(newElementInContainer);
 }
 
-// CONTENEDOR No.2
-
-containerPrincipal2.ondragover = function (event) {// Este evento se va a disparar cuando la imagen se arrastre por encima del contenedor
-    event.preventDefault();
-}
-
-containerPrincipal2.ondrop=function(event){// Este Evento se disparara cuando la imagen sea soltada en el contenedor
-    var dropImageBuho1=event.dataTransfer.getData('text');
-    event.preventDefault();
-    var myElement=document.getElementById(dropImageBuho1);
-    var newElementInContainer=document.createElement('img');
-    newElementInContainer.src=myElement.src;
-    containerPrincipal2.appendChild(newElementInContainer);
-}
 

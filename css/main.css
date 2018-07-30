@@ -3,6 +3,8 @@ body{
 }
 ul{
    list-style-type: none;
+   display: block;
+
 }
 li{
    text-decoration: none;
