@@ -40,15 +40,17 @@ img,#container-img-save{
   border:none;
 }
 
-@media(max-width:320px){
+@media(max-width:375px){
   .dragImages{
-    width:110px;
+    width:100px;
     height: 100px;
-    margin-left: 10px;
   }
   #container1  img{
-    width:120px;
-    height: 110px;
+    width:95px;
+    height: 170px;
+  }
+  #images{
+    margin-left: 15px;
   }
 }
 
