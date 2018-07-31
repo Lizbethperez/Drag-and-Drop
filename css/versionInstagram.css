@@ -42,12 +42,12 @@ img,#container-img-save{
 
 @media(max-width:320px){
   .dragImages{
-    width:120px;
+    width:110px;
     height: 100px;
     margin-left: 10px;
   }
   #container1  img{
-    width:90px;
+    width:120px;
     height: 110px;
   }
 }
