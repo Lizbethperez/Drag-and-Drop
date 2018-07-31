@@ -24,8 +24,8 @@ img,#container-img-save{
    background: white;
    border:2px double #c74375;
    border-radius: 10px;
-   height: 200px;
-   padding-left: 10px;
+   height: 300px;
+   padding-left: 15px;
 }
 
 /*#container1  img{
@@ -36,18 +36,31 @@ img,#container-img-save{
   border:none;
 }
 
-@media(max-width:425px){
+@media(max-width:320px){
   .dragImages{
-    width:121px;
-    height: 200px;
+    width:120px;
+    height: 100px;
+    margin-left: 10px;
+  }
+  #container1  img{
+    width:90px;
+    height: 170px;
+  }
+}
+
+@media(min-width:425px){
+  .dragImages{
+    width:118px;
+    height: 150px;
   }
 
   #container1  img{
     width: 122px;
-    height: 190px;
+    height: 270px;
   }
 }
 
+/*
 @media(min-width:764px){
   .dragImages{
     width:135px;
@@ -59,18 +72,7 @@ img,#container-img-save{
     height: 190px;
   }
 }
-
-@media(min-width:320px){
-  .dragImages{
-    width:120px;
-    height: 100px;
-    margin-left: 10px;
-  }
-  #container1  img{
-    width:90px;
-    height: 170px;
-  }
-}
+*/
 @media(min-width:765px){
   .dragImages{
     width:220px;
