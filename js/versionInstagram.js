@@ -36,9 +36,19 @@ containerPrincipal.ondragover = function (event) {// Este evento se va a dispara
 }
 
 containerPrincipal.ondrop=function(event){// Este Evento se disparara cuando la imagen sea soltada en el contenedor
+    var imagesLength=$("#container1").children().length;
+    console.log(imagesLength);
     var dropImageBuho1=event.dataTransfer.getData('text');
     event.preventDefault();
     var myElement=document.getElementById(dropImageBuho1);
+    
+    var lastChild=$("#container1").children().last();
+    if(imagesLength>5){
+        console.log(lastChild);
+        var imprimir=lastChild.attr("src",myElement.src);
+        console.log(imprimir);
+        return;
+    }
     var newElementInContainer=document.createElement('img');
     newElementInContainer.src=myElement.src;
     containerPrincipal.appendChild(newElementInContainer);

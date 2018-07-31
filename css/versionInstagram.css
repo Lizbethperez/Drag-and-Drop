@@ -9,6 +9,7 @@ body{
 h4,h5{
   font-family: 'Lobster', cursive;
 }
+
 #images{
     width:120px;
 }
@@ -22,10 +23,13 @@ img,#container-img-save{
 #container1{
    box-sizing: border-box;
    background: white;
+   background: linear-gradient(to right, rgba(228,255,214,1) 0%, rgba(149,213,201,0.82) 30%, 
+    rgba(250,214,247,0.63) 63%, rgba(255,164,185,0.5) 85%, rgba(255,164,185,0.41) 100%);
    border:2px double #c74375;
    border-radius: 10px;
-   height: 300px;
-   padding-left: 15px;
+   height: 400px;
+   padding-top: 10px;
+   padding-left: 20px;
 }
 
 /*#container1  img{
@@ -44,39 +48,33 @@ img,#container-img-save{
   }
   #container1  img{
     width:90px;
-    height: 170px;
+    height: 110px;
   }
 }
 
 @media(min-width:425px){
+  #images{
+    margin-left: 15px;
+  }
   .dragImages{
+    margin-top:10px;
     width:118px;
     height: 150px;
   }
 
   #container1  img{
-    width: 122px;
-    height: 270px;
+    width: 115px;
+    height: 180px;
   }
 }
 
-/*
-@media(min-width:764px){
-  .dragImages{
-    width:135px;
-    height: 100px;
-    margin-left:25px;
-  }
-  #container1  img{
-    width: 238px;
-    height: 190px;
-  }
-}
-*/
 @media(min-width:765px){
+  #container1{
+    height: 450px;
+  }
   .dragImages{
-    width:220px;
-    height: 180px;
+    width:200px;
+    height: 160px;
     margin-left:10px;
   }
   h4,h5{
@@ -84,11 +82,15 @@ img,#container-img-save{
   }
   #container1  img{
     margin-top:15px;
-    width:230px;
-    height: 180px;
+    width:220px;
+    height: 160px;
+  }
+  #images{
+    margin-left: 24px;
   }
 }
-/*@media(max-width:1024){
+
+@media(min-width:990){
   #container1  img{
     width:220px;
     height: 180px;
@@ -101,4 +103,3 @@ img,#container-img-save{
     margin-left:5px;
   }
 }
-*/
